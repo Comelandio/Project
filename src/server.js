@@ -9,8 +9,5 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 require('./controller/authController')(app);
 
-app.get('/', (request, response) => { 
-    response.send('Hello, day!');
-})
 
 app.listen(3003);
