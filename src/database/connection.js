@@ -1,10 +1,24 @@
-const mongoose = require('mongoose');
+import Sequelize from 'sequelize';
+import databaseConfig from '../config/database'
+import User from '../app/models/user';
+import Evaluation from '../app/models/evaluation'
+import Points from '../app/models/points'
 
-//mongoose.connect('mongoose://Localhost/noderest', { useMongoClient: true });
-mongoose.connect('mongodb://localhost:27017/noderest', 
-    { useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true});
-mongoose.Promise = global.Promise;
+const models = [
+    User,
+    Evaluation,
+    Points
+];
 
-module.exports = mongoose;
+class Database {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        this.connection = new Sequelize(databaseConfig);
+        models.map(model => models.init(this.connection));
+    }
+}
+
+export default new Database();
