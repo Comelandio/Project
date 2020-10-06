@@ -6,7 +6,7 @@ const QueryInterface = require('sequelize/types');
 export function up(QueryInterface, sequelize) {
     return QueryInterface.createTable('Charge', {
        
-        user_id: {
+        charge_id: {
             type: Sequelize.INTEGER,
             allowNull: false,
             autoIncrement: true,
