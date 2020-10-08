@@ -5,9 +5,9 @@ import Evaluation from '../app/models/evaluation'
 import Points from '../app/models/points'
 
 const models = [
-    User,
-    Evaluation,
-    Points
+    user,
+    charge,
+    relationship
 ];
 
 class Database {
