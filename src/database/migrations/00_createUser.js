@@ -13,16 +13,16 @@ export function up (queryInterface, Sequelize) {
             primarykey: true
         },
         name: {
-            type: Sequelize.ISTRIG,
+            type: Sequelize.STRING,
             alloNull: false,
         },
         email: {
-            type: Sequelize.ISTRIG,
+            type: Sequelize.STRING,
             alloNull: false,
         },
 
         password: {
-            type: Sequelize.ISTRIG,
+            type: Sequelize.STRING,
             alloNull: false,
         },
     })
