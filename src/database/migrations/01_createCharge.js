@@ -40,3 +40,4 @@ export function up(QueryInterface, sequelize) {
 export function down(QueryInterface){
     return QueryInterface.dropTable('Charge')
 }
+

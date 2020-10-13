@@ -31,3 +31,4 @@ export function up(QueryInterface, sequelize) {
 export function down(QueryInterface, sequelize){
     return QueryInterface.dropTable('Relations')
 }
+
