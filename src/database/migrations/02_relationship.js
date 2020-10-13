@@ -9,7 +9,7 @@ export function up(QueryInterface, sequelize) {
             type: Sequelize.INTEGER,
             allowNull: false,
             autoIncrement: true,
-            primaryKey: true
+           // primaryKey: true
         },
 
         user_id: {
