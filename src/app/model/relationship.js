@@ -16,3 +16,4 @@ class Relationship extends Model {
 };
 
 module.exports = Relationship
+
