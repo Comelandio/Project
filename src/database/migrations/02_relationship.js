@@ -32,4 +32,4 @@ export function down(QueryInterface, sequelize){
     return QueryInterface.dropTable('Relations')
 }
 
-//ccccc
+//test
