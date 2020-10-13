@@ -9,8 +9,8 @@ export function up(QueryInterface, sequelize) {
             type: Sequelize.INTEGER,
             allowNull: false,
             autoIncrement: true,
-           // primaryKey: true
-        },
+            primaryKey: true
+        }, // aqui
 
         user_id: {
             type: Sequelize.INTEGER,
