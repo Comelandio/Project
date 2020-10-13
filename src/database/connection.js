@@ -8,6 +8,7 @@ const models = [
     user,
     charge,
     relationship
+    // aqui
 ];
 
 class Database {
