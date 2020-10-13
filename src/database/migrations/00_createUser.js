@@ -10,7 +10,7 @@ export function up (queryInterface, Sequelize) {
             type: Sequelize.INTEGER,
             alloNull: false,
             autoIncremento: true,
-            //primarykey: true
+            primarykey: true
         },
         name: {
             type: Sequelize.STRING,
