@@ -8,7 +8,7 @@ class Charge extends Model {
                 driver: Sequelize.STRING,
                 registrations: Sequelize.STRING,
                 charge: Sequelize.STRING,
-                destiny: Sequelize.STRING
+             //   destiny: Sequelize.STRING
             },
             {
                sequelize 
