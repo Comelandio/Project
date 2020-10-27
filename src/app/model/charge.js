@@ -18,3 +18,4 @@ class Charge extends Model {
 };
 
 module.exports = Charge
+

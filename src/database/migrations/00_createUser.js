@@ -31,3 +31,4 @@ export function up (queryInterface, Sequelize) {
 export function down (QueryInterface){
     return queryInterface.dropTable('User')
 }
+
